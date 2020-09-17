@@ -1,0 +1,531 @@
+[
+ 	{
+ 		"type": "category",
+ 		"title": "participant-type",
+ 		"description": "Participation",
+ 		"childrenDescription": "Types of Participants: ",
+
+ 		"entries": [
+ 		   {
+ 			   "type": "category-entry",
+ 			   "title": "blind",
+ 			   "description": "Blind Participants",
+         "content": "<span class=\"fas fa-blind\"></span>"
+ 		   },
+
+ 		   {
+ 			   "type": "category-entry",
+ 			   "title": "lowvision",
+ 			   "description": "Low Vision Participants",
+         "content": "<span class=\"fas fa-low-vision\"></span>"
+ 		   },
+
+ 		   {
+ 			   "type": "category-entry",
+ 			   "title": "blindfolded",
+ 			   "description": "Blindfolded Participants",
+         "content": "<span class=\"fas fa-asterisk\"></span>"
+ 		   },
+
+ 		   {
+ 			   "type": "category-entry",
+ 			   "title": "psighted",
+ 			   "description": "Sighted Participants",
+         "content": "<span class=\"fas fa-eye\"></span>"
+ 		   },
+
+       {
+         "type": "category-entry",
+         "title": "professional",
+         "description": "Professional Participants",
+         "content": "<span class=\"fas fa-user-tie\"></span>"
+       }
+ 		]
+ 	},
+
+	{
+ 		"type": "category",
+ 		"title": "Contributon",
+ 		"description": "Contributons",
+ 		"childrenDescription": "Contributions: ",
+
+ 		"entries": [
+ 		   {
+ 			   "type": "category-entry",
+ 			   "title": "case study/application",
+ 			   "description": "Case Study/Application",
+         "content": "<span class=\"fas fa-university\"></span>"
+ 		   },
+
+ 		   {
+ 			   "type": "category-entry",
+ 			   "title": "interaction method",
+ 			   "description": "Interaction Method",
+         "content": "<span class=\"fas fa-comments\"></span>"
+ 		   },
+
+ 		   {
+ 			   "type": "category-entry",
+ 			   "title": "new technology - presentation method",
+ 			   "description": "New Technology - Presentation Method",
+         "content": "<span class=\"fas fa-print\"></span>"
+ 		   },
+
+ 		   {
+ 			   "type": "category-entry",
+ 			   "title": "new technology - production method",
+ 			   "description": "New Technology - Production Method",
+         "content": "<span class=\"fas fa-industry\"></span>"
+ 		   },
+
+ 		   {
+ 			   "type": "category-entry",
+ 			   "title": "improvement",
+ 			   "description": "Improvement",
+         "content": "<span class=\"fas fa-signal\"></span>"
+ 		   },
+
+ 		   {
+ 			   "type": "category-entry",
+ 			   "title": "systematic review",
+ 			   "description": "Systematic Review",
+         "content": "<span class=\"fas fa-search\"></span>"
+ 		   },
+
+ 		   {
+ 			   "type": "category-entry",
+ 			   "title": "comparative study",
+ 			   "description": "Comparative Study",
+         "content": "<span class=\"fas fa-less-than-equal\"></span>"
+ 		   },
+
+ 		   {
+ 			   "type": "category-entry",
+ 			   "title": "other (contribution)",
+ 			   "description": "Other (Contribution)",
+         "content": "<span class=\"fas fa-asterisk\"></span>"
+ 		   }
+ 		]
+ 	},
+
+ 	{
+     "type": "category",
+     "title": "evaluation",
+     "description": "Evaluation Type",
+     "childrenDescription": "Evaluation Type: ",
+
+     "entries": [
+  	   {
+  			   "type": "category-entry",
+  			   "title": "quantitative",
+  			   "description": "Quantitative",
+           "content": "<span class=\"fas fa-comments\"></span>"
+  		   },
+
+  		   {
+  			   "type": "category-entry",
+  			   "title": "qualitative",
+  			   "description": "Qualitative",
+           "content": "<span class=\"fas fa-stopwatch-20\"></span>"
+  		   },
+
+  		   {
+  			   "type": "category-entry",
+  			   "title": "lab",
+  			   "description": "Lab",
+           "content": "<span class=\"fas fa-flask\"></span>"
+  		   },
+
+       {
+         "type": "category-entry",
+         "title": "in-situ",
+         "description": "In-Situ",
+         "content": "<span class=\"fas fa-school\"></span>"
+       },
+
+     {
+       "type": "category-entry",
+       "title": "none",
+       "description": "None",
+       "content": "<span class=\"fas fa-asterisk\"></span>"
+     }
+     ]
+   },
+
+   {
+      "type": "category",
+      "title": "source",
+      "description": "Source",
+      "childrenDescription": "Source: ",
+
+      "entries": [
+   	   {
+   			   "type": "category-entry",
+   			   "title": "visual graphic",
+   			   "description": "Visual Graphic",
+           "content": "<span class=\"fas fa-images\"></span>"
+   		   },
+
+   		   {
+   			   "type": "category-entry",
+   			   "title": "free format",
+   			   "description": "Free Format",
+           "content": "<span class=\"fas fa-asterisk\"></span>"
+   		   },
+
+   		   {
+   			   "type": "category-entry",
+   			   "title": "data",
+   			   "description": "Data",
+           "content": "<span class=\"fas fa-table\"></span>"
+   		   }
+      ]
+    },
+
+    {
+       "type": "category",
+       "title": "involvement",
+       "description": "Involvement",
+       "childrenDescription": "Involvement: ",
+
+       "entries": [
+    	   {
+    			   "type": "category-entry",
+    			   "title": "manual",
+    			   "description": "Manual",
+             "content": "<span class=\"fas fa-user\"></span>"
+    		   },
+
+    		   {
+    			   "type": "category-entry",
+    			   "title": "automated",
+    			   "description": "Automated",
+             "content": "<span class=\"fas fa-user-alt-slash\"></span>"
+    		   },
+
+           {
+             "type": "category-entry",
+             "title": "semi-automated",
+             "description": "Semi-Automated",
+             "content": "<span class=\"fas fa-robot\"></span>"
+           },
+
+           {
+             "type": "category-entry",
+             "title": "modify or annotate only",
+             "description": "Modify or Annotate Only",
+             "content": "<span class=\"fas fa-exchange-alt\"></span>"
+           }
+       ]
+     },
+
+     {
+        "type": "category",
+        "title": "display",
+        "description": "Display Method",
+        "childrenDescription": "Display Method: ",
+
+        "entries": [
+     	   {
+     			   "type": "category-entry",
+     			   "title": "3d model - 3d printed",
+     			   "description": "3D Model - 3D Printed",
+             "content": "<span class=\"fas fa-cube\"></span>"
+     		   },
+
+           {
+               "type": "category-entry",
+               "title": "3d model - other",
+               "description": "3D Model - Other",
+               "content": "<span class=\"fas fa-cubes\"></span>"
+             },
+
+     		   {
+     			   "type": "category-entry",
+     			   "title": "force feedback device",
+     			   "description": "Force Feedback Device",
+             "content": "<span class=\"fas fa-compress-arrows-alt\"></span>"
+     		   },
+
+           {
+               "type": "category-entry",
+               "title": "tactile graphic",
+               "description": "Tactile Graphic",
+               "content": "<span class=\"fas fa-hand-paper\"></span>"
+             },
+
+            {
+                "type": "category-entry",
+                "title": "audio labels",
+                "description": "Audio Labels",
+                "content": "<span class=\"fas fa-universal-access\"></span>"
+            },
+
+            {
+                "type": "category-entry",
+                "title": "low vision visuals",
+                "description": "Low Vision Visuals",
+                "content": "<span class=\"fas fa-asterisk\"></span>"
+            },
+
+            {
+                "type": "category-entry",
+                "title": "qr codes",
+                "description": "QR Codes",
+                "content": "<span class=\"fas fa-qrcode\"></span>"
+            },
+
+            {
+                "type": "category-entry",
+                "title": "vibration",
+                "description": "Vibration",
+                "content": "<span class=\"fas fa-compress-alt\"></span>"
+            },
+
+            {
+                "type": "category-entry",
+                "title": "overlay",
+                "description": "Overlay",
+                "content": "<span class=\"fas fa-copy\"></span>"
+            },
+
+            {
+                "type": "category-entry",
+                "title": "refreshable tactile display",
+                "description": "Refreshable Tactile Display",
+                "content": "<span class=\"fas fa-sync-alt\"></span>"
+            },
+
+            {
+                "type": "category-entry",
+                "title": "gustatory",
+                "description": "Gustatory",
+                "content": "<span class=\"fas fa-utensils\"></span>"
+            },
+
+            {
+                "type": "category-entry",
+                "title": "olfaction",
+                "description": "Olfaction",
+                "content": "<span class=\"fas fa-box-tissue\"></span>"
+            },
+
+            {
+                "type": "category-entry",
+                "title": "touch screen",
+                "description": "Touch Screen",
+                "content": "<span class=\"fas fa-fingerprint\"></span>"
+            },
+
+            {
+                "type": "category-entry",
+                "title": "sonification",
+                "description": "Sonification",
+                "content": "<span class=\"fas fa-headphones\"></span>"
+            },
+
+            {
+                "type": "category-entry",
+                "title": "other (display)",
+                "description": "Other (Display)",
+                "content": "<span class=\"fas fa-asterisk\"></span>"
+            }
+        ]
+      },
+
+     {
+        "type": "category",
+        "title": "producer",
+        "description": "Producer",
+        "childrenDescription": "Producer: ",
+
+        "entries": [
+     	   {
+     			   "type": "category-entry",
+     			   "title": "sighted person",
+     			   "description": "Sighted Person",
+             "content": "<span class=\"fas fa-eye\"></span>"
+     		   },
+
+     		   {
+     			   "type": "category-entry",
+     			   "title": "blind or low vision person",
+     			   "description": "BLV Person",
+             "content": "<span class=\"fas fa-low-vision\"></span>"
+     		   }
+        ]
+      },
+
+ 	{
+ 		"type": "category",
+ 		"title": "use",
+ 		"description": "Use",
+ 		"childrenDescription": "Use: ",
+
+ 		"entries": [
+ 		   {
+ 			   "type": "category-entry",
+ 			   "title": "education",
+ 			   "description": "Education",
+         "content": "<span class=\"fas fa-graduation-cap\"></span>"
+ 		   },
+
+ 		   {
+ 			   "type": "category-entry",
+ 			   "title": "o&m",
+ 			   "description": "O&M",
+         "content": "<span class=\"fas fa-walking\"></span>"
+ 		   },
+
+ 		   {
+ 			   "type": "category-entry",
+ 			   "title": "daily living",
+ 			   "description": "Daily Living",
+         "content": "<span class=\"fas fa-calendar-day\"></span>"
+ 		   },
+
+       {
+           "type": "category-entry",
+           "title": "n/a",
+           "description": "N/A",
+           "content": "<span class=\"fas fa-asterisk\"></span>"
+         },
+
+       {
+         "type": "category-entry",
+         "title": "daily use",
+         "description": "Daily Use",
+         "content": "<span class=\"fas fa-asterisk\"></span>"
+       },
+
+ 		   {
+ 			   "type": "category-entry",
+ 			   "title": "museum or gallery",
+ 			   "description": "Museum or Gallery",
+         "content": "<span class=\"fas fa-ticket-alt\"></span>"
+ 		   },
+
+       {
+          "type": "category-entry",
+          "title": "workplace",
+          "description": "Workplace",
+          "content": "<span class=\"fas fa-building\"></span>"
+        },
+
+ 		   {
+ 			   "type": "category-entry",
+ 			   "title": "paintings",
+ 			   "description": "Paintings",
+         "content": "<span class=\"fas fa-brush\"></span>"
+ 		   },
+
+		   {
+			   "type": "category-entry",
+			   "title": "graphs and diagrams",
+			   "description": "Graphs & Diagrams",
+         "content": "<span class=\"fas fa-chart-pie\"></span>"
+		   },
+
+       {
+         "type": "category-entry",
+         "title": "books",
+         "description": "Books",
+         "content": "<span class=\"fas fa-book\"></span>"
+       },
+
+       {
+        "type": "category-entry",
+        "title": "drawing",
+        "description": "Drawing",
+        "content": "<span class=\"fas fa-pencil-alt\"></span>"
+      },
+
+
+ 		   {
+ 			   "type": "category-entry",
+ 			   "title": "not specified",
+ 			   "description": "Not Specified",
+         "content": "<span class=\"fas fa-asterisk\"></span>"
+ 		   },
+
+		   {
+			   "type": "category-entry",
+			   "title": "general",
+			   "description": "General",
+         "content": "<span class=\"fas fa-asterisk\"></span>"
+		   },
+
+		   {
+			   "type": "category-entry",
+			   "title": "other (use)",
+			   "description": "Other (Use)",
+         "content": "<span class=\"fas fa-asterisk\"></span>"
+		   }
+ 		]
+ 	},
+
+  {
+    "type": "category",
+    "title": "diagram",
+    "description": "Diagram",
+    "childrenDescription": "Diagram: ",
+
+    "entries": [
+       {
+         "type": "category-entry",
+         "title": "maths",
+         "description": "Maths",
+         "content": "<span class=\"fas fa-calculator\"></span>"
+       },
+
+       {
+         "type": "category-entry",
+         "title": "science",
+         "description": "Science",
+         "content": "<span class=\"fas fa-atom\"></span>"
+       },
+
+       {
+         "type": "category-entry",
+         "title": "technology",
+         "description": "Technology",
+         "content": "<span class=\"fas fa-laptop-code\"></span>"
+       },
+
+       {
+           "type": "category-entry",
+           "title": "maps and plans",
+           "description": "Maps & Plans",
+           "content": "<span class=\"fas fa-map\"></span>"
+         },
+
+       {
+         "type": "category-entry",
+         "title": "general or unspecified",
+         "description": "General or Unspecified",
+         "content": "<span class=\"fas fa-file-alt\"></span>"
+       },
+
+       {
+         "type": "category-entry",
+         "title": "paintings",
+         "description": "Paintings",
+         "content": "<span class=\"fas fa-palette\"></span>"
+       },
+
+       {
+         "type": "category-entry",
+         "title": "sculptures or historic artefacts",
+         "description": "Sculptures or Historic Artefacts",
+         "content": "<span class=\"fas fa-history\"></span>"
+       },
+
+		   {
+			   "type": "category-entry",
+			   "title": "other (diagram)",
+			   "description": "Other (Diagram)",
+         "content": "<span class=\"fas fa-asterisk\"></span>"
+		   }
+    ]
+  }
+]
