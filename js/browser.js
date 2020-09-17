@@ -915,22 +915,10 @@ function updateDisplayedEntries(){
 		container.append("<p class=\"text-muted\">No eligible entries found</p>");
 	} else {
 		$.each(eligibleEntries, function(i,d){
-			//var element = $("<div class=\"content-entry\" tabindex=0 data-tooltip=\"test\">"+d.title+"</div>");
-			//var element = $("<div class=\"col\" tabindex=0 data-tooltip=\"test\">"+d.title+"</div>");
-			//var element = $("<div class=\"col\" tabindex=0 data-toggle=\"collapse\" data-toggle=\"collapse\" data-target=\"#collapseExample\" aria-expanded=\"false\" aria-controls=\"collapseThree\" data-tooltip=\"test\"><div class=\"collapse\" id=\"collapseExample\"><h3>"+d.title+d.id+"</h3></div></div>");
-
-			//var element = $("<div class=\'card\'>" +
-											//"<div class=\'card-header\' id=\'heading" + d.id +"\'>" +
-											//"<button class=\'btn btn-link\' tabindex=0 data-toggle=\'collapse\' data-target=\'#collapse" + d.id +"\' aria-expanded=\'true\' aria-controls=\'collapse" + d.id +"\'>" +
-											//"<h3>" + d.title + "</h3></button></div>" +
-											//"<div id=\'collapse" + d.id +"\' class=\'collapse show\' aria-labelledby=\'heading" + d.id +"\' data-parent=\'#accordion\'>" +
-									    //"<div class=\'card-body\'>test test test</div></div></div>");
-
-			var element = $("<div class=\'panel panel-default\' tabindex=0>" +
-											"<div class=\'panel-heading\' role=\'tab\' id=\'heading" + d.id +"\'" +
-											//make the accordion the button
-											"<h4 class=\'panel-title\'><a class=\'collapsed\' role=\'button\' tabindex=0 data-toggle=\'collapse\' data-parent=\'#accordion\' href=\'#collapse" + d.id +"\' aria-expanded=\'false\' aria-controls=\'collapse" + d.id +"\'>" +
-								       d.title + " (" + d.year + ")</a></h4></div>" +
+			var element = $("<div class=\'panel panel-default\'>" +
+											"<div class=\'panel-heading\' role=\'tab\' id=\'heading" + d.id +"\'>" +
+											"<h4 class=\'panel-title\'><button class=\'btn-link collapsed\' role=\'button\' tabindex=0 data-toggle=\'collapse\' data-parent=\'#accordion\' href=\'#collapse" + d.id +"\' aria-expanded=\'false\' aria-controls=\'collapse" + d.id +"\'>" +
+								       d.title + " (" + d.year + ")</button></h4></div>" +
 											 "<div id=\'collapse" + d.id +"\' class=\'panel-collapse collapse\' role=\'tabpanel\' aria-labelledby=\'heading" + d.id +"\'>" +
 									     "<div class=\'panel-body\'>" +
 											 "<h5 id=\'entryDetailsTitle" + d.id + "\' class=\'media-heading entry-details-field entry-details-title\'></h5>" +
@@ -943,16 +931,8 @@ function updateDisplayedEntries(){
 											 "<h6 id=\'entryDetailsBib" + d.id + "\' class=\'entry-details-field\' tabindex=0></h6>" +
 											 "</div></div></div>");
 
-			//set aria-controls and data-target to the div id of the collapse component
-			//this component needs a unique id! -> d.id
 			element.attr("data-id", d.id);
 			element.prop("title", d.title + " (" + d.year + ")");
-
-			//var image = $("<img class=\"media-object thumbnail100\">");
-			//image.attr("src", d.thumb100.src);
-
-			//element.append(image);
-
 			container.append(element);
 		});
 	}
