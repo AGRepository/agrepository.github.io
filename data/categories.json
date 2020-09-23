@@ -24,7 +24,7 @@
  			   "type": "category-entry",
  			   "title": "blindfolded",
  			   "description": "Blindfolded Participants",
-         "content": "<span class=\"fas fa-asterisk\"></span>"
+         "content": "<span class=\"fas fa-glasses\"></span>"
  		   },
 
  		   {
@@ -170,7 +170,7 @@
    			   "type": "category-entry",
    			   "title": "free format",
    			   "description": "Free Format",
-           "content": "<span class=\"fas fa-asterisk\"></span>"
+           "content": "<span class=\"fas fa-lightbulb\"></span>"
    		   },
 
    		   {
@@ -258,14 +258,14 @@
                 "type": "category-entry",
                 "title": "audio labels",
                 "description": "Audio Labels",
-                "content": "<span class=\"fas fa-universal-access\"></span>"
+                "content": "<span class=\"fas fa-audio-description\"></span>"
             },
 
             {
                 "type": "category-entry",
                 "title": "low vision visuals",
                 "description": "Low Vision Visuals",
-                "content": "<span class=\"fas fa-asterisk\"></span>"
+                "content": "<span class=\"fas fa-universal-access\"></span>"
             },
 
             {
@@ -385,17 +385,10 @@
  		   },
 
        {
-           "type": "category-entry",
-           "title": "n/a",
-           "description": "N/A",
-           "content": "<span class=\"fas fa-asterisk\"></span>"
-         },
-
-       {
          "type": "category-entry",
          "title": "daily use",
          "description": "Daily Use",
-         "content": "<span class=\"fas fa-asterisk\"></span>"
+         "content": "<span class=\"fas fa-calendar-day\"></span>"
        },
 
  		   {
