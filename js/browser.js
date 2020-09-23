@@ -225,7 +225,7 @@ function displayEntryDetails(id) {
 	$("#entryDetailsTitle" + entry.id).html(entry.title + " (" + entry.year + ")");
 
 	//if (entry.authors)
-		$("#entryDetailsAuthors" + entry.id).html("Authors: " + entry.authors);
+		$("#entryDetailsAuthors" + entry.id).html("Authors: " + entry.author);
 
 	$("#entryDetailsVenue" + entry.id).html("Venue: " + entry.venue);
 
@@ -1294,7 +1294,7 @@ function populateSummaryTable() {
 		row.append("<td class=\"technique-cell\">"
 				+ "<span class=\"summary-entry-link-wrapper\">"
 				+ "<a href=\"#\" data-id=\"" + d.id + "\" class=\"summary-entry-link\" "
-				+ "title=\"" + d.title + " by " + d.authors + " (" + d.year + ")" + "\""
+				+ "title=\"" + d.title + " by " + d.author + " (" + d.year + ")" + "\""
 				+ ">" + d.title + " (" + d.year + ")"
 				+ "</a>" + "</span>" + "</td>");
 
