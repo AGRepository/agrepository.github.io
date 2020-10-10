@@ -122,28 +122,26 @@ function setupHandlers(){
 		.on("click", ".category-entry", onFilterToggle)
 		.on("click", ".reset-category-filter", onCategoryFilterReset);
 
-	//$("#entriesContainer").on("click", ".content-entry", onEntryClick);
-	//$("#accordion").on("click", ".panel", onEntryClick);
 	$("#accordion").on("click", ".panel", onEntryClick);
 
 
 	$("#entryDetailsModal").on("hidden.bs.modal", onDetailsModalHidden);
 
-	$("#addEntryModal").on("keypress", function(e) {
+	$("#addEntry").on("keypress", function(e) {
 		if (e.which == 13)
 			$("#processNewEntry").click();
 	});
 
-	$("#addEntryModal form").on("reset", onAddFormReset);
+	$("#addEntry form").on("reset", onAddFormReset);
 
 	$("#processNewEntry").on("click", onAddEntry);
 
-	$("#aboutModal").on("shown.bs.modal", onAboutModalShown);
+	//$("#aboutModal").on("shown.bs.modal", onAboutModalShown);
 
-	$(window).on("resize", function(){
-		if ($("#aboutModal").hasClass("in"))
-			onAboutModalShown();
-	});
+	//$(window).on("resize", function(){
+		//if ($("#aboutModal").hasClass("in"))
+			//onAboutModalShown();
+	//});
 
 	// Hide the dismissible top alert
 	$("#topAlert").on("close.bs.alert", function(){
@@ -250,10 +248,10 @@ function displayEntryDetails(id) {
 		element.prop("title", item.descriptionPrefix
 					? item.descriptionPrefix + item.description
 					: item.description);
-		console.log(element);
+		//console.log(element);
 		element.append(item.content);
 		element.append(" " + item.descriptionPrefix + " " + item.description)
-		console.log(element);
+		//console.log(element);
 
 
 		$("#entryDetailsCategories" + entry.id).append(element);
@@ -263,6 +261,49 @@ function displayEntryDetails(id) {
 	$("#entryDetailsCategories" + entry.id).append(" ");
 
 	//$("#entryDetailsModal").modal("show");
+}
+
+function displayModalEntryDetails(id) {
+	if (!entriesMap[id])
+		return;
+
+	var entry = entriesMap[id];
+
+	//$("#entryDetailsThumbnail").attr("src", entry.thumb200.src);
+	// Since the large thumbnails are not preloaded anymore, load the thumbnail via URL
+	//$("#entryDetailsThumbnail").attr("src", "test.png");
+
+	//$("#entryDetailsModal .entry-details-field").empty();
+
+	//$("#entryDetailsTitle").html(entry.title + " (" + entry.year + ")");
+
+	$("#entryDetailsTitle").html(entry.title + " (" + entry.year + ")");
+	$("#entryDetailsAuthors").html("Authors: " + entry.author);
+	$("#entryDetailsVenue").html("Venue: " + entry.venue);
+	$("#entryDetailsType").html("Type: " + entry.type);
+	if (entry.url)
+		$("#entryDetailsDOI").html("DOI/URL: <a href=\'" + entry.url + "\' target=\'_blank\'>" + entry.url + "</a>");
+	$("#entryDetailsBib").html("<a href=\'bibtex/" + entry.id + ".bib\' target=\'_blank\'><span class=\'glyphicon glyphicon-save\'></span> BibTeX</a>");
+	$("#entryDetailsCategories").empty();
+
+	$.each(entry.categories, function(i,d){
+		var item = categoriesMap[d];
+		var element = $("<span class=\'category-entry category-entry-span \'" +
+					"data-tooltip=\'tooltip\' tabindex=0></span>");
+
+		element.prop("title", item.descriptionPrefix
+					? item.descriptionPrefix + item.description
+					: item.description);
+		//console.log(element);
+		element.append(item.content);
+		element.append(" " + item.descriptionPrefix + " " + item.description)
+		//console.log(element);
+
+		$("#entryDetailsCategories").append(element);
+		$("#entryDetailsCategories").append(" ");
+	});
+
+	$("#entryDetailsCategories").append(" ");
 }
 
 function onDetailsModalHidden(){
@@ -277,8 +318,40 @@ function updateDisplayedCount(){
 
 }
 
+function clickResources() {
+	$("#faqs, #summary, #tabulated, #addEntry").hide();
+	$("#sidebar, #resources").show();
+	//console.log("resources");
+}
+
+function clickFAQ(){
+	$("#sidebar, #resources, #summary, #tabulated, #addEntry").hide();
+	$("#faq").show();
+	//console.log("faq");
+}
+
+function clickSummary(){
+	$("#sidebar, #resources, #faq, #tabulated, #addEntry").hide();
+	$("#summary").show();
+	onAboutModalShown();
+	//console.log("summary");
+}
+
+function clickTabulated(){
+	$("#sidebar, #resources, #faq, #summary, #addEntry").hide();
+	$("#tabulated").show();
+	populateSummaryTable();
+	//console.log("tabulated");
+}
+
+function clickAddEntry(){
+	$("#sidebar, #resources, #faq, #tabulated, #summary").hide();
+	$("#addEntry").show();
+	//console.log("addEntry");
+}
+
 function onAddFormReset(){
-	$("#addEntryModal form .form-group").removeClass("has-error").removeClass("has-success");
+	$("#addEntry form .form-group").removeClass("has-error").removeClass("has-success");
 	$("#inputEntryCategories .category-entry.active").removeClass("active");
 }
 
@@ -597,7 +670,7 @@ function processStatistics(){
 function appendAuxiliaryFilters(){
 	var totalCount = Object.keys(entriesMap).length;
 	//var content = "<span class=\"content-entry-label\">...</span>";
-	var content = "<span class=\"fas fa-ellipsis-h\"></span>";
+	var content = "<span class=\"fas fa-times-circle\"></span>";
 
 	$("#categoriesList .category-item").each(function(i,d){
 		var element = $(d);
@@ -616,7 +689,7 @@ function appendAuxiliaryFilters(){
 			var button = $("<button type=\"button\" class=\"btn btn-default category-entry category-other active uniform\""
 				    + "data-tooltip=\"tooltip\"></button>");
 			button.attr("data-category", title);
-			button.prop("title", "Other");
+			button.prop("title", "None");
 			button.append(content);
 
 			element.find(".category-entries-container").append(button);
@@ -1023,6 +1096,9 @@ function onAddEntry(){
 	if ($("#inputEntryVenue").val())
 			entry.venue = $("#inputEntryVenue").val();
 
+	if ($("#inputEntryAuthors").val())
+			entry.authors = $("#inputEntryAuthors").val();
+
 	if ($("#inputEntryYear").val())
 			entry.year = $("#inputEntryYear").val();
 
@@ -1336,7 +1412,10 @@ function populateSummaryTable() {
 // Handles the click on a summary entry link
 function onSummaryEntryLinkClick(){
 	// Close the summary dialog
-	$("#summaryTableModal").modal("hide");
+	//$("#summaryTableModal").modal("hide");
+
+	$("#entryDetailsModal").modal("show");
+
 
 	// Emulate the effects of a closed details dialog
 	onDetailsModalHidden();
@@ -1345,7 +1424,7 @@ function onSummaryEntryLinkClick(){
 	var id = $(this).data("id");
 
 	// Trigger the usual handler
-	displayEntryDetails(id);
+	displayModalEntryDetails(id);
 
 	// Return false to prevent the default handler for hyperlinks
 	return false;

@@ -119,14 +119,14 @@
   			   "type": "category-entry",
   			   "title": "quantitative",
   			   "description": "Quantitative",
-           "content": "<span class=\"fas fa-comments\"></span>"
+           "content": "<span class=\"fas fa-stopwatch-20\"></span>"
   		   },
 
   		   {
   			   "type": "category-entry",
   			   "title": "qualitative",
   			   "description": "Qualitative",
-           "content": "<span class=\"fas fa-stopwatch-20\"></span>"
+           "content": "<span class=\"fas fa-comments\"></span>"
   		   },
 
   		   {
@@ -141,14 +141,7 @@
          "title": "in-situ",
          "description": "In-Situ",
          "content": "<span class=\"fas fa-school\"></span>"
-       },
-
-     {
-       "type": "category-entry",
-       "title": "none",
-       "description": "None",
-       "content": "<span class=\"fas fa-asterisk\"></span>"
-     }
+       }
      ]
    },
 
@@ -433,19 +426,18 @@
         "content": "<span class=\"fas fa-pencil-alt\"></span>"
       },
 
-
  		   {
  			   "type": "category-entry",
  			   "title": "not specified",
  			   "description": "Not Specified",
-         "content": "<span class=\"fas fa-asterisk\"></span>"
+         "content": "<span class=\"fas fa-question\"></span>"
  		   },
 
 		   {
 			   "type": "category-entry",
 			   "title": "general",
 			   "description": "General",
-         "content": "<span class=\"fas fa-asterisk\"></span>"
+         "content": "<span class=\"fas fa-home\"></span>"
 		   },
 
 		   {

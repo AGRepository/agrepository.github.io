@@ -76,16 +76,19 @@
         <div class="navbar-collapse collapse custom-navbar-collapse">
         	<ul class="nav navbar-nav navbar-right">
             <li>
-            <a href="#" data-toggle="modal" data-target="#howToUseFAQModal">FAQ</a>
+            	<a href="#" onclick="clickResources();">Resources</a>
+            </li>
+            <li>
+       			<a href="#" onclick="clickFAQ();">FAQ/About</a>
             </li>
           	<li>
-	      			<a href="#" data-toggle="modal" data-target="#aboutModal">About</a>
+	      			<a href="#" onclick="clickSummary();">Summary</a>
 	      		</li>
 	      		<li>
-	      			<a href="#" data-toggle="modal" data-target="#summaryTableModal">Summary</a>
+	      			<a href="#" onclick="clickTabulated();">Tabulated</a>
 	      		</li>
 	      		<li>
-	      			<a href="#" data-toggle="modal" data-target="#addEntryModal">Add entry</a>
+              <a href="#" onclick="clickAddEntry();">Add Entry</a>
 	      		</li>
 	      		<li class="dropdown">
 		        	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Other surveys <b class="caret"></b></a>
@@ -210,8 +213,8 @@
 
     <!-- Main content wrapper -->
     <table class="content-wrapper">
-    	<tr class="content-row">
-    		<td class="sidebar-fixed">
+    	<tr class="content-row" id="resource-row">
+    		<td class="sidebar-fixed" id="sidebar">
     			<div class="sidebar-container">
 	    			<div id="filtersPanel" class="panel panel-default small-bottom-margin">
 					  <div class="panel-body">
@@ -255,11 +258,121 @@
     			 <div class="container-fluid">
 			    	<div class="row-container">
 
-				    	<div class="row">
+				    	<div class="row" id="resources">
               <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
 				    			<p class="text-muted">Here comes the content</p>
 				    		</div>
 				    	</div>
+
+              <div class="row" style="display:none" id="faq">
+                <div class="modal-body">
+                  <h3>FAQ/About</h3>
+
+                  <div class="media">
+                    <span class="pull-left">
+                      <a href="https://url-identifier.com" class="about-link" target="_blank" title="Anonymised Group">
+                        <img class="media-object" src="images/isovis-logo.png" width="122px" height="125px" alt="Anonymised Group logo">
+                      </a>
+                    </span>
+                    <div class="media-body">
+                      <h3 id="aboutTitle">Accessible Graphics Repository (AGRep)</h3>
+                      <div>Developed by Anonymised Group</div>
+                      <div><a href="https://url-identifier.com" class="about-link" target="_blank" title="Anonymised Group">Anonymised Group</a></div>
+                      <div><b>To cite this resource,</b> please refer to the <a href="http://dx.doi.org/.../.../" target="_blank" title="paper title here">link to paper</a>.
+                      </div>
+                    </div>
+                </div>
+
+                  <h4>What is AGRep?</h4>
+                  <p>Accessible Graphics Repository (AGRep) is an online repository that consists of a corpus of documents identified in a systematic literature review focused on touch-based accessible graphics. As a tool AGRep was designed to support the authors, as well as the wider touch-based graphics research community, in exploring the corpus of identified resources. AGRep is envisioned as a living resource capturing what has been done in the field of accessible graphics technology, and users can update the corpus with newly published resources in the future. AGRep has been customised to improve its level of accessibility, with efforts ongoing.</p>
+
+
+                  <h4>How to Use and Navigate AGRep</h4>
+                  <p>The tool is split into two main sections: category filtering and associated resources. Filters are presented in groups - e.g. Participation, Contributions, Source etc. Groups have multiple filters - e.g. Blind Participants, Low Vision Participants, Blindfolded Participants - each represented by an icon which is accessible by both keyboard and mouse. AGRep filter icons by default are loaded in an “active” state. Think of each filter icon as a light switch which has been turned on, causing all resources in the corpus to load by default. To filter the corpus, select and deactivate the filter icons that you would like to hide (“flip the light switch”) - e.g. if you would like to view all resources that involved Blind Participants, deselect all other Participation filter icons.</p>
+
+                  <p>Listed resources are updated dynamically according to user filtering. Resources are accessible by both keyboard and mouse and can be tabbed into. When a resource has been opened information relevant to that particular resource will be accessible, including resource metadata such as authors, venue and how it was categorised by our research team.</p>
+                </div>
+				    	</div>
+
+              <div class="row" style="display:none" id="summary">
+                <div class="modal-body">
+                <h3>Summary Data</h3>
+                <div id="statsContainer"></div>
+                </div>
+            </div>
+
+              <div class="row" style="display:none" id="tabulated">
+                <div class="modal-body">
+                <h3>Tabulated Data</h3>
+                  <div id="summaryTableContainer"></div>
+                </div>
+            </div>
+
+              <div class="row" style="display:none" id="addEntry">
+                <div class="modal-body">
+         					<h3 id="addEntryTitle">Add Entry</h3>
+         					<p>If you are an author of a <a href="http://definitions.uslegal.com/p/peer-review-education/" target="_blank">peer-reviewed</a> <a href="http://definitions.uslegal.com/a/academic-publishing/" target="_blank">published work</a> on sentiment visualization (related to text data)
+         					that presents a contribution missing in our browser, please feel free to
+         					submit an entry. If you wish to do so, please use the form below to generate a JSON entry, save it as a file and send it to
+         					<a href="mailto:anonymised.group@email.com?subject=AGRep Browser entry">Anonymised Group</a> together with a BibTeX reference file.</p>
+
+         					<p>The URL provided in the form should point to <a href="http://dx.doi.org/" target="_blank">a DOI</a>.</p>
+
+         					<p class="large-top-margin">
+         						<b>Note:</b> if you have trouble seeing the resulting entry after clicking the "Process" button, please check your AdBlock settings (and add this website to the whitelist).
+         					</p>
+         					<div class="vertical-delimiter"></div>
+         					<form class="form-horizontal" role="form">
+      						<div class="form-group">
+      					    	<label for="inputEntryTitle" class="col-sm-2 control-label">Short title</label>
+      						    <div class="col-sm-10">
+      						    	<input type="text" class="form-control form-mandatory" id="inputEntryTitle" placeholder="e.g., AGRep paper title">
+      						    </div>
+      					    </div>
+
+      					    <div class="form-group">
+      					    	<label for="inputEntryYear" class="col-sm-2 control-label">Year</label>
+      						    <div class="col-sm-10">
+      						    	<input type="number" class="form-control form-mandatory" id="inputEntryYear" placeholder="e.g., 2020" min="1900" max="2050" value="2020">
+      						    </div>
+      					    </div>
+
+      					    <div class="form-group">
+      					    	<label for="inputEntryAuthors" class="col-sm-2 control-label">Authors</label>
+      						    <div class="col-sm-10">
+      						    	<input type="text" class="form-control form-mandatory" id="inputEntryAuthors" placeholder="e.g., John Doe and Jane Doe">
+      						    </div>
+      					    </div>
+
+      					    <div class="form-group">
+      					    	<label for="inputEntryCategories" class="col-sm-2 control-label">Categories</label>
+      						    <div id="inputEntryCategories" class="col-sm-10">
+      						    </div>
+      					    </div>
+
+      					    <div class="form-group">
+      					    	<label for="inputEntryReference" class="col-sm-2 control-label">Reference</label>
+      						    <div class="col-sm-10">
+      						    	<input type="text" class="form-control form-mandatory" id="inputEntryReference" placeholder="e.g., John Doe and Jane Doe. Great Long Title. Proceedings of a famous conference, pp.100-105, 2016.">
+      						    </div>
+      					    </div>
+
+      					    <div class="form-group">
+      					    	<label for="inputEntryUrl" class="col-sm-2 control-label">URL</label>
+      						    <div class="col-sm-10">
+      						    	<input type="url" class="form-control" id="inputEntryUrl" placeholder="e.g., http://dx.doi.org/0">
+      						    </div>
+      					    </div>
+
+      					    <div class="form-group">
+      					    	<div class="col-sm-12">
+      					    		<button id="resetNewEntry" type="reset" class="btn btn-default">Reset</button>
+      					      		<button id="processNewEntry" type="button" class="btn btn-default pull-right">Process</button>
+      					    	</div>
+      					    </div>
+      					</form>
+           			</div>
+            </div>
 
 			    	</div>
 			    </div>
@@ -285,174 +398,31 @@
     </div>
 
     <!-- Entry details modal -->
-	<div id="entryDetailsModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="entryDetailsTitle" aria-hidden="true" data-backdrop="static">
-		<div class="modal-dialog modal-wide">
-  			<div class="modal-content">
-				<div class="modal-header" hidden="true"></div>
-   				<div class="modal-body">
-   					<div class="media">
-  						<span class="pull-left">
-    						<img id="entryDetailsThumbnail" class="media-object thumbnail200">
-  						</span>
-  						<div class="media-body">
-  							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-    						<h4 id="entryDetailsTitle" class="media-heading entry-details-field entry-details-title"></h4>
-   							<h5 id="entryDetailsAuthors" class="entry-details-field"></h5>
-   							<div id="entryDetailsCategories" class="entry-details-field"></div>
-   							<div class="vertical-delimiter"></div>
-   							<h6 id="entryDetailsReference" class="entry-details-field"></h6>
-   							<h6 id="entryDetailsUrl" class="entry-details-field"></h6>
-   							<h6 id="entryDetailsBibtex" class="entry-details-field"></h6>
-  						</div>
-					</div>
-     			</div>
-     			<div class="modal-footer" hidden="true"></div>
-  			</div><!-- /.modal-content -->
-		</div><!-- /.modal-dialog -->
-	</div><!-- /.modal -->
-
-	<!-- About modal -->
-	<div id="aboutModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="aboutTitle" aria-hidden="true" data-backdrop="static">
-		<div class="modal-dialog modal-medium">
-  			<div class="modal-content">
-				<div class="modal-header" hidden="true"></div>
-   				<div class="modal-body">
-   					<div class="media">
-   						<span class="pull-left">
-    						<a href="https://url-identifier.com" class="about-link" target="_blank" title="Anonymised Group">
-    							<img class="media-object" src="images/isovis-logo.png" width="122px" height="125px" alt="Anonymised Group logo">
-    						</a>
-  						</span>
-  						<div class="media-body">
-  							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-  							<h3 id="aboutTitle">Accessible Graphics Repository (AGRep)</h3>
-   							<div>Developed by Anonymised Group</div>
-   							<div><a href="https://url-identifier.com" class="about-link" target="_blank" title="Anonymised Group">Anonymised Group</a></div>
-   							<div><b>To cite this resource,</b> please refer to the <a href="http://dx.doi.org/.../.../" target="_blank" title="paper title here">link to paper</a>.
-   							</div>
-   						</div>
-					</div>
-					<div id="statsContainer"></div>
-					<hr/>
-					<!--<div>
-						Additional links:
-						<ul>
-						<li><a href="data/sentimentvis-coauthorship-16.01.2019.gml" target="_blank" title="Coauthorship graph extracted on January 16, 2019">Coauthorship graph (GML) for January 16, 2019</a></li>
-	   					<li><a href="http://gmap.cs.arizona.edu/map/9144/" target="_blank" title="GMap based on coauthorship graph extracted on January 16, 2019">GMap based on coauthorship graph for January 16, 2019</a></li>
-	   					</ul>
-					</div>-->
-     			</div>
-     			<div class="modal-footer" hidden="true"></div>
-  			</div><!-- /.modal-content -->
-		</div><!-- /.modal-dialog -->
-	</div><!-- /.modal -->
-
-	<!-- Summary table modal -->
-	<div id="summaryTableModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="summaryTableTitle" aria-hidden="true" data-backdrop="static">
-		<div class="modal-dialog modal-max">
-  			<div class="modal-content">
-				<div class="modal-header" hidden="true"></div>
-   				<div class="modal-body">
-   					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h3>Survey summary</h3>
-   					<div id="summaryTableContainer"></div>
-     			</div>
-     			<div class="modal-footer" hidden="true"></div>
-  			</div><!-- /.modal-content -->
-		</div><!-- /.modal-dialog -->
-	</div><!-- /.modal -->
-
-	<!-- How to use FAQ modal -->
-<div id="howToUseFAQModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="howToUseFAQTitle" aria-hidden="true" data-backdrop="static">
-  <div class="modal-dialog modal-wide">
-      <div class="modal-content">
-      <div class="modal-header" hidden="true"></div>
-        <div class="modal-body">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h3>How to Use AGRep</h3>
-          <p>Instructions go here!</p>
-
-          <p>Instructions go here!</p>
-        </div>
-        <div class="modal-footer" hidden="true"></div>
-      </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-
-<!-- Add entry modal -->
-	<div id="addEntryModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="addEntryTitle" aria-hidden="true" data-backdrop="static">
-		<div class="modal-dialog modal-wide">
-  			<div class="modal-content">
-				<div class="modal-header" hidden="true"></div>
-   				<div class="modal-body">
-   					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-   					<h3 id="addEntryTitle">Add entry</h3>
-   					<p>If you are an author of a <a href="http://definitions.uslegal.com/p/peer-review-education/" target="_blank">peer-reviewed</a> <a href="http://definitions.uslegal.com/a/academic-publishing/" target="_blank">published work</a> on sentiment visualization (related to text data)
-   					that presents a contribution missing in our browser, please feel free to
-   					submit an entry. If you wish to do so, please use the form below to generate a JSON entry, save it as a file and send it to
-   					<a href="mailto:anonymised.group@email.com?subject=AGRep Browser entry">Anonymised Group</a> together with a BibTeX reference file.</p>
-
-   					<p>The URL provided in the form should point to <a href="http://dx.doi.org/" target="_blank">a DOI</a>.</p>
-
-   					<p class="large-top-margin">
-   						<b>Note:</b> if you have trouble seeing the resulting entry after clicking the "Process" button, please check your AdBlock settings (and add this website to the whitelist).
-   					</p>
-   					<div class="vertical-delimiter"></div>
-   					<form class="form-horizontal" role="form">
-						<div class="form-group">
-					    	<label for="inputEntryTitle" class="col-sm-2 control-label">Short title</label>
-						    <div class="col-sm-10">
-						    	<input type="text" class="form-control form-mandatory" id="inputEntryTitle" placeholder="e.g., AGRep paper title">
-						    </div>
-					    </div>
-
-					    <div class="form-group">
-					    	<label for="inputEntryYear" class="col-sm-2 control-label">Year</label>
-						    <div class="col-sm-10">
-						    	<input type="number" class="form-control form-mandatory" id="inputEntryYear" placeholder="e.g., 2020" min="1900" max="2050" value="2020">
-						    </div>
-					    </div>
-
-					    <div class="form-group">
-					    	<label for="inputEntryAuthors" class="col-sm-2 control-label">Authors</label>
-						    <div class="col-sm-10">
-						    	<input type="text" class="form-control form-mandatory" id="inputEntryAuthors" placeholder="e.g., John Doe and Jane Doe">
-						    </div>
-					    </div>
-
-					    <div class="form-group">
-					    	<label for="inputEntryCategories" class="col-sm-2 control-label">Categories</label>
-						    <div id="inputEntryCategories" class="col-sm-10">
-						    </div>
-					    </div>
-
-					    <div class="form-group">
-					    	<label for="inputEntryReference" class="col-sm-2 control-label">Reference</label>
-						    <div class="col-sm-10">
-						    	<input type="text" class="form-control form-mandatory" id="inputEntryReference" placeholder="e.g., John Doe and Jane Doe. Great Long Title. Proceedings of a famous conference, pp.100-105, 2016.">
-						    </div>
-					    </div>
-
-					    <div class="form-group">
-					    	<label for="inputEntryUrl" class="col-sm-2 control-label">URL</label>
-						    <div class="col-sm-10">
-						    	<input type="url" class="form-control" id="inputEntryUrl" placeholder="e.g., http://dx.doi.org/0">
-						    </div>
-					    </div>
-
-					    <div class="form-group">
-					    	<div class="col-sm-12">
-					    		<button id="resetNewEntry" type="reset" class="btn btn-default">Reset</button>
-					      		<button id="processNewEntry" type="button" class="btn btn-default pull-right">Process</button>
-					    	</div>
-					    </div>
-					</form>
-
-     			</div>
-     			<div class="modal-footer" hidden="true"></div>
-  			</div><!-- /.modal-content -->
-		</div><!-- /.modal-dialog -->
-	</div><!-- /.modal -->
+  <div id="entryDetailsModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="entryDetailsTitle" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-wide">
+        <div class="modal-content">
+        <div class="modal-header" hidden="true"></div>
+          <div class="modal-body">
+            <div class="media">
+              <span class="pull-left">
+                <img id="entryDetailsThumbnail" class="media-object thumbnail200">
+              </span>
+              <div class="media-body">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 id="entryDetailsTitle" class="media-heading entry-details-field entry-details-title"></h4>
+                <h5 id="entryDetailsAuthors" class="entry-details-field"></h5>
+                <h5 id="entryDetailsVenue" class="entry-details-field"></h5>
+                <h5 id="entryDetailsType" class="entry-details-field"></h5>
+                <h5 id="entryDetailsDOI" class="entry-details-field"></h5>
+                <h5 id="entryDetailsBib" class="entry-details-field"></h5>
+                <div id="entryDetailsCategories" class="entry-details-field"></div>
+              </div>
+          </div>
+          </div>
+          <div class="modal-footer" hidden="true"></div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>

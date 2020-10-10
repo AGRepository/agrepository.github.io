@@ -14,8 +14,7 @@
       "3d model - 3d printed",
       "sighted person",
       "manual",
-      "visual graphic",
-      "none"
+      "visual graphic"
     ],
     "url": "https://web.stanford.edu/class/engr110/2015/pdf/Team-Walrus.pdf",
     "identifier": "Agarwal2014",
@@ -132,8 +131,7 @@
       "new technology - presentation method",
       "general or unspecified",
       "not specified",
-      "vibration",
-      "none"
+      "vibration"
     ],
     "url": "https://doi.org/10.1145/2046396.2046401",
     "identifier": "Amberg2011",
@@ -152,8 +150,7 @@
       "tactile graphic",
       "sighted person",
       "automated",
-      "data",
-      "none"
+      "data"
     ],
     "url": "https://doi.org/10.1145/2661334.2661389",
     "identifier": "Araki2014",
@@ -278,8 +275,7 @@
       "sighted person",
       "blind or low vision person",
       "manual",
-      "free format",
-      "none"
+      "free format"
     ],
     "url": "http://ceur-ws.org/Vol-1324/paper_5.pdf",
     "identifier": "Bornschein2014_2",
@@ -328,7 +324,6 @@
       "semi-automated",
       "manual",
       "free format",
-      "none",
       "blind"
     ],
     "url": "https://doi.org/10.1007/978-3-319-22701-6_7",
@@ -347,8 +342,7 @@
       "systematic review",
       "drawing",
       "not specified",
-      "blind or low vision person",
-      "none"
+      "blind or low vision person"
     ],
     "url": "https://doi.org/10.1145/3056540.3056542",
     "identifier": "Bornschein2017",
@@ -368,8 +362,7 @@
       "refreshable tactile display",
       "blind or low vision person",
       "manual",
-      "free format",
-      "none"
+      "free format"
     ],
     "url": "https://doi.org/10.1145/3170427.3186487",
     "identifier": "Bornschein2018_1",
@@ -413,8 +406,7 @@
       "sighted person",
       "blind or low vision person",
       "automated",
-      "visual graphic",
-      "none"
+      "visual graphic"
     ],
     "url": "https://doi.org/10.1007/978-3-319-41264-1_29",
     "identifier": "Bose2016",
@@ -433,8 +425,7 @@
       "tactile graphic",
       "sighted person",
       "semi-automated",
-      "visual graphic",
-      "none"
+      "visual graphic"
     ],
     "url": "https://doi.org/10.1145/2661334.2661335",
     "identifier": "Bouhel2014",
@@ -507,8 +498,7 @@
       "audio labels",
       "sighted person",
       "manual",
-      "visual graphic",
-      "none"
+      "visual graphic"
     ],
     "url": "https://doi.org/10.1145/2945078.2945093",
     "identifier": "Brito2016",
@@ -529,7 +519,6 @@
       "sighted person",
       "automated",
       "data",
-      "none",
       "blind"
     ],
     "url": "https://doi.org/10.1145/1979742.1979840",
@@ -792,8 +781,7 @@
       "paintings",
       "museum or gallery",
       "3d model - 3d printed",
-      "audio labels",
-      "none"
+      "audio labels"
     ],
     "url": "https://doi.org/10.3390/s16091361",
     "identifier": "Buonamici2016",
@@ -813,8 +801,7 @@
       "3d model - 3d printed",
       "sighted person",
       "semi-automated",
-      "visual graphic",
-      "none"
+      "visual graphic"
     ],
     "url": "https://doi.org/10.1088/1757-899X/364/1/012101",
     "identifier": "Buonamici2018",
@@ -856,8 +843,7 @@
       "maps and plans",
       "daily living",
       "vibration",
-      "audio labels",
-      "none"
+      "audio labels"
     ],
     "url": "https://doi.org/10.1007/978-3-642-21663-3_29",
     "identifier": "Buzzi2011",
@@ -922,8 +908,7 @@
       "touch screen",
       "vibration",
       "sonification",
-      "audio labels",
-      "none"
+      "audio labels"
     ],
     "url": "https://doi.org/10.1007/978-3-642-39188-0_47",
     "identifier": "Carroll2013",
@@ -943,8 +928,7 @@
       "sighted person",
       "automated",
       "visual graphic",
-      "data",
-      "none"
+      "data"
     ],
     "url": "https://doi.org/10.1007/978-3-319-41267-2_18",
     "identifier": "Cervenka2016",
@@ -1007,8 +991,7 @@
       "tactile graphic",
       "sighted person",
       "automated",
-      "visual graphic",
-      "none"
+      "visual graphic"
     ],
     "url": "https://doi.org/10.1007/978-3-319-08596-8_99",
     "identifier": "Chen2014",
@@ -1032,8 +1015,7 @@
       "sighted person",
       "blind or low vision person",
       "automated",
-      "visual graphic",
-      "none"
+      "visual graphic"
     ],
     "url": "https://doi.org/10.1007/978-3-642-14097-6_16",
     "identifier": "Constantinescu2010",
@@ -1155,8 +1137,7 @@
       "new technology - presentation method",
       "general or unspecified",
       "education",
-      "vibration",
-      "none"
+      "vibration"
     ],
     "url": "https://doi.org/10.5241/7-123",
     "identifier": "Dhaher2017",
@@ -1355,8 +1336,7 @@
       "general",
       "tactile graphic",
       "automated",
-      "visual graphic",
-      "none"
+      "visual graphic"
     ],
     "url": "https://doi.org/10.1145/2513383.2513406",
     "identifier": "Ferro2013",
@@ -1488,8 +1468,7 @@
       "general or unspecified",
       "not specified",
       "touch screen",
-      "force feedback device",
-      "none"
+      "force feedback device"
     ],
     "url": "https://doi.org/10.1007/978-3-319-94274-2_36",
     "identifier": "Gay2018",
@@ -1665,8 +1644,7 @@
       "sighted person",
       "semi-automated",
       "visual graphic",
-      "data",
-      "none"
+      "data"
     ],
     "url": "https://r-resources.massey.ac.nz/BrailleR/DEIMS2016_GodfreyMurrell_TactileGraphs.pdf",
     "identifier": "Godfrey2016",
@@ -1717,8 +1695,7 @@
       "automated",
       "semi-automated",
       "manual",
-      "visual graphic",
-      "none"
+      "visual graphic"
     ],
     "url": "https://doi.org/10.1109/MED.2014.6961366",
     "identifier": "Goncu2014",
@@ -1802,8 +1779,7 @@
       "sighted person",
       "manual",
       "visual graphic",
-      "data",
-      "none"
+      "data"
     ],
     "url": "https://doi.org/10.1145/3308561.3354586",
     "identifier": "Goncu2019",
@@ -1822,8 +1798,7 @@
       "tactile graphic",
       "sighted person",
       "semi-automated",
-      "visual graphic",
-      "none"
+      "visual graphic"
     ],
     "url": "https://doi.org/10.1145/3308561.3354613",
     "identifier": "Gonzalez2019",
@@ -1867,8 +1842,7 @@
       "systematic review",
       "general or unspecified",
       "not specified",
-      "touch screen",
-      "none"
+      "touch screen"
     ],
     "url": "https://doi.org/10.5772/intechopen.82289",
     "identifier": "Gorlewicz2018",
@@ -1887,8 +1861,7 @@
       "3d model - 3d printed",
       "sighted person",
       "semi-automated",
-      "data",
-      "none"
+      "data"
     ],
     "url": "https://doi.org/10.1007/978-3-319-08599-9_1",
     "identifier": "Gotzelmann2014_1",
@@ -1910,8 +1883,7 @@
       "audio labels",
       "sighted person",
       "manual",
-      "visual graphic",
-      "none"
+      "visual graphic"
     ],
     "url": "https://doi.org/10.1145/2669485.2669550",
     "identifier": "Gotzelmann2014_2",
@@ -2010,8 +1982,7 @@
       "other (display)",
       "sighted person",
       "semi-automated",
-      "data",
-      "none"
+      "data"
     ],
     "url": "https://doi.org/10.1007/978-3-319-41267-2_20",
     "identifier": "Gotzelmann2016_3",
@@ -2221,6 +2192,7 @@
       "qualitative",
       "lab",
       "blind",
+      "not specified",
       "blindfolded"
     ],
     "url": "http://repositori.uji.es/xmlui/handle/10234/70883?locale-attribute=en",
@@ -2269,6 +2241,7 @@
       "lab",
       "blind",
       "lowvision",
+      "not specified",
       "blindfolded"
     ],
     "url": "https://doi.org/10.1016/j.apergo.2014.10.018",
@@ -2388,8 +2361,7 @@
       "education",
       "museum or gallery",
       "workplace",
-      "refreshable tactile display",
-      "none"
+      "refreshable tactile display"
     ],
     "url": "https://doi.org/10.1007/978-3-319-94274-2_35",
     "identifier": "Gyoshev2018",
@@ -2747,6 +2719,7 @@
       "manual",
       "visual graphic",
       "qualitative",
+      "not specified",
       "professional"
     ],
     "url": "https://doi.org/10.1145/3308561.3354619",
@@ -2793,8 +2766,7 @@
       "other (display)",
       "sighted person",
       "manual",
-      "visual graphic",
-      "none"
+      "visual graphic"
     ],
     "url": "https://doi.org/10.1145/2049536.2049577",
     "identifier": "Hribar2011",
@@ -2837,8 +2809,7 @@
       "3d model - 3d printed",
       "audio labels",
       "sighted person",
-      "free format",
-      "none"
+      "free format"
     ],
     "url": "https://doi.org/10.1145/2851581.2892351",
     "identifier": "Hudin2016",
@@ -2940,7 +2911,7 @@
     "categories": [
       "other (contribution)",
       "general or unspecified",
-      "n/a",
+      "not specified",
       "3d model - 3d printed",
       "3d model - other"
     ],
@@ -2962,8 +2933,7 @@
       "3d model - other",
       "sighted person",
       "manual",
-      "free format",
-      "none"
+      "free format"
     ],
     "url": "https://www.nfb.org/images/nfb/publications/bm/bm13/bm1311/bm131105.htm",
     "identifier": "Jaquiss2013",
@@ -3135,7 +3105,6 @@
       "sighted person",
       "manual",
       "visual graphic",
-      "none",
       "psighted"
     ],
     "url": "https://doi.org/10.1145/2659766.2661211",
@@ -3179,8 +3148,7 @@
       "graphs and diagrams",
       "science",
       "general or unspecified",
-      "education",
-      "none"
+      "education"
     ],
     "url": "http://iihm.imag.fr/coutrix/publications-files/CHI18-Using-Kim.pdf",
     "identifier": "Kim2018",
@@ -3222,8 +3190,7 @@
       "daily living",
       "refreshable tactile display",
       "automated",
-      "data",
-      "none"
+      "data"
     ],
     "url": "https://doi.org/10.1007/978-3-319-94274-2_4",
     "identifier": "Kobayashi2018",
@@ -3269,8 +3236,7 @@
       "audio labels",
       "sighted person",
       "manual",
-      "visual graphic",
-      "none"
+      "visual graphic"
     ],
     "url": "https://accessinghigherground.org/show1prop4grid2014.php?vpropid=1989&vday=Thursday&vdis=grid",
     "identifier": "Kolitsky2014_1",
@@ -3289,8 +3255,7 @@
       "3d model - 3d printed",
       "sighted person",
       "manual",
-      "visual graphic",
-      "none"
+      "visual graphic"
     ],
     "url": "https://www.nfb.org/images/nfb/publications/jbir/jbir14/jbir040102.html",
     "identifier": "Kolitsky2014_2",
@@ -3315,8 +3280,7 @@
       "sighted person",
       "manual",
       "visual graphic",
-      "data",
-      "none"
+      "data"
     ],
     "url": "https://doi.org/10.15219/em63.1222",
     "identifier": "Kolitsky2016",
@@ -3338,8 +3302,7 @@
       "other (display)",
       "sighted person",
       "manual",
-      "free format",
-      "none"
+      "free format"
     ],
     "url": "https://doi.org/10.15219/em80.1427",
     "identifier": "Kolitsky2019",
@@ -3360,8 +3323,7 @@
       "sighted person",
       "semi-automated",
       "visual graphic",
-      "data",
-      "none"
+      "data"
     ],
     "url": "https://doi.org/10.1063/1.3322361",
     "identifier": "Kouroupetroglou2010",
@@ -3376,11 +3338,11 @@
     "categories": [
       "new technology - presentation method",
       "general or unspecified",
-      "n/a",
       "vibration",
       "other (display)",
       "quantitative",
       "blindfolded",
+      "not specified",
       "psighted"
     ],
     "url": "https://doi.org/10.1145/3197768.3201526",
@@ -3469,6 +3431,7 @@
       "sighted person",
       "blind or low vision person",
       "automated",
+      "not specified",
       "data"
     ],
     "url": "?????????",
@@ -3614,6 +3577,7 @@
       "visual graphic",
       "data",
       "qualitative",
+      "not specified",
       "in-situ"
     ],
     "url": "https://doi.org/10.1007/s10822-014-9782-7",
@@ -3680,12 +3644,12 @@
     "categories": [
       "interaction method",
       "general or unspecified",
-      "n/a",
       "tactile graphic",
       "sighted person",
       "manual",
       "data",
       "lab",
+      "not specified",
       "blind"
     ],
     "url": "https://doi.org/10.1007/s10209-020-00729-4",
@@ -3779,8 +3743,7 @@
       "overlay",
       "sighted person",
       "manual",
-      "visual graphic",
-      "none"
+      "visual graphic"
     ],
     "url": "https://doi.org/10.1007/978-3-642-14097-6_3",
     "identifier": "McMullen2010",
@@ -3916,6 +3879,7 @@
       "manual",
       "visual graphic",
       "qualitative",
+      "not specified",
       "lab",
       "blind"
     ],
@@ -3958,8 +3922,7 @@
       "audio labels",
       "blind or low vision person",
       "semi-automated",
-      "data",
-      "none"
+      "data"
     ],
     "url": "https://doi.org/10.1109/TALE.2013.6654464",
     "identifier": "Mohammadi2013",
@@ -4022,8 +3985,7 @@
       "new technology - production method",
       "general or unspecified",
       "education",
-      "tactile graphic",
-      "none"
+      "tactile graphic"
     ],
     "url": "https://doi.org/10.1007/978-3-642-14100-3_65",
     "identifier": "M�ller2010",
@@ -4048,6 +4010,7 @@
       "qualitative",
       "lab",
       "blind",
+      "not specified",
       "blindfolded"
     ],
     "url": "https://doi.org/10.1007/978-3-642-14097-6_41",
@@ -4075,8 +4038,7 @@
       "semi-automated",
       "manual",
       "visual graphic",
-      "data",
-      "none"
+      "data"
     ],
     "url": "https://doi.org/10.1145/2769493.2769502",
     "identifier": "Namdev2015",
@@ -4095,8 +4057,7 @@
       "3d model - 3d printed",
       "sighted person",
       "manual",
-      "visual graphic",
-      "none"
+      "visual graphic"
     ],
     "url": "https://doi.org/10.1007/978-3-662-44630-0_9",
     "identifier": "Neumuller2014",
@@ -4113,8 +4074,7 @@
       "other (contribution)",
       "general or unspecified",
       "not specified",
-      "refreshable tactile display",
-      "none"
+      "refreshable tactile display"
     ],
     "url": "https://doi.org/10.1109/TOH.2015.2466231",
     "identifier": "O'Modhrain2015",
@@ -4160,8 +4120,7 @@
       "blind or low vision person",
       "semi-automated",
       "visual graphic",
-      "data",
-      "none"
+      "data"
     ],
     "url": "https://doi.org/10.1109/ICALT.2016.47",
     "identifier": "Ohene-Djan2016",
@@ -4456,13 +4415,12 @@
     "categories": [
       "new technology - production method",
       "general or unspecified",
-      "n/a",
       "tactile graphic",
       "sighted person",
       "manual",
       "visual graphic",
-      "free format",
-      "none"
+      "not specified",
+      "free format"
     ],
     "url": "https://doi.org/10.5241/4-49 ",
     "identifier": "Pather2014",
@@ -4696,8 +4654,7 @@
       "other (diagram)",
       "not specified",
       "refreshable tactile display",
-      "audio labels",
-      "none"
+      "audio labels"
     ],
     "url": "https://doi.org/10.1145/3290607.3313249",
     "identifier": "Rao2019",
@@ -4946,6 +4903,7 @@
       "qualitative",
       "lab",
       "blind",
+      "not specified",
       "psighted"
     ],
     "url": "https://doi.org/10.1145/3343055.3359722",
@@ -5027,8 +4985,7 @@
       "tactile graphic",
       "blind or low vision person",
       "manual",
-      "free format",
-      "none"
+      "free format"
     ],
     "url": "https://doi.org/10.1007/978-3-642-14100-3_60",
     "identifier": "Robinson2010",
@@ -5047,8 +5004,7 @@
       "3d model - 3d printed",
       "sighted person",
       "manual",
-      "visual graphic",
-      "none"
+      "visual graphic"
     ],
     "url": "https://doi.org/10.1007/978-3-319-94196-7_23",
     "identifier": "Rodrigues2019",
@@ -5201,8 +5157,7 @@
       "interaction method",
       "general or unspecified",
       "not specified",
-      "other (display)",
-      "none"
+      "other (display)"
     ],
     "url": "https://doi.org/10.1145/2661334.2661350",
     "identifier": "Sen2014",
@@ -5245,8 +5200,7 @@
       "sculptures or historic artefacts",
       "museum or gallery",
       "3d model - 3d printed",
-      "tactile graphic",
-      "none"
+      "tactile graphic"
     ],
     "url": "https://doi.org/10.1088/1757-899X/364/1/012039",
     "identifier": "Setti2018",
@@ -5293,8 +5247,7 @@
       "sighted person",
       "manual",
       "visual graphic",
-      "data",
-      "none"
+      "data"
     ],
     "url": "https://doi.org/10.1145/2982142.2982153",
     "identifier": "Shi2016_1",
@@ -5407,8 +5360,7 @@
       "sighted person",
       "manual",
       "visual graphic",
-      "data",
-      "none"
+      "data"
     ],
     "url": "https://doi.org/10.1145/3234695.3241004",
     "identifier": "Shi2018",
@@ -5434,8 +5386,7 @@
       "sighted person",
       "blind or low vision person",
       "manual",
-      "data",
-      "none"
+      "data"
     ],
     "url": "https://doi.org/10.1145/3308561.3354594",
     "identifier": "Shi2019_1",
@@ -5588,11 +5539,11 @@
       "new technology - production method",
       "new technology - presentation method",
       "general or unspecified",
-      "n/a",
       "3d model - 3d printed",
       "refreshable tactile display",
       "blind or low vision person",
       "manual",
+      "not specified",
       "visual graphic",
       "qualitative",
       "lab",
@@ -5612,7 +5563,6 @@
       "improvement",
       "new technology - presentation method",
       "general or unspecified",
-      "n/a",
       "3d model - 3d printed",
       "refreshable tactile display",
       "blind or low vision person",
@@ -5622,6 +5572,7 @@
       "qualitative",
       "lab",
       "blind",
+      "not specified",
       "lowvision"
     ],
     "url": "https://doi.org/10.1145/3308561.3353782",
@@ -5754,8 +5705,7 @@
       "maps and plans",
       "o&m",
       "3d model - 3d printed",
-      "tactile graphic",
-      "none"
+      "tactile graphic"
     ],
     "url": "http://idea.ap.buffalo.edu/wp-content/uploads/sites/110/2019/08/22.pdf",
     "identifier": "Subryan2010",
@@ -5774,8 +5724,7 @@
       "touch screen",
       "force feedback device",
       "sighted person",
-      "manual",
-      "none"
+      "manual"
     ],
     "url": "https://doi.org/10.1007/978-3-319-08599-9_2",
     "identifier": "Sullivan2014",
@@ -5916,8 +5865,7 @@
       "tactile graphic",
       "sighted person",
       "automated",
-      "data",
-      "none"
+      "data"
     ],
     "url": "https://www.researchgate.net/publication/281036525_Development_of_a_Tactile_Star_Chart_Automated_Creation_System",
     "identifier": "Taguchi2012",
@@ -6117,12 +6065,12 @@
       "case study/application",
       "maths",
       "science",
-      "n/a",
       "3d model - 3d printed",
       "sighted person",
       "manual",
       "data",
       "quantitative",
+      "not specified",
       "blind"
     ],
     "url": "https://doi.org/10.1007/978-3-642-14100-3_77",
@@ -6336,8 +6284,7 @@
       "vibration",
       "audio labels",
       "automated",
-      "data",
-      "none"
+      "data"
     ],
     "url": "https://doi.org/10.3390/ijgi8070293",
     "identifier": "Wabinski2019",
@@ -6430,8 +6377,7 @@
       "tactile graphic",
       "sighted person",
       "manual",
-      "visual graphic",
-      "none"
+      "visual graphic"
     ],
     "url": "https://doi.org/10.1007/978-3-319-08599-9_7",
     "identifier": "Watanabe2014",
@@ -6678,8 +6624,7 @@
       "general or unspecified",
       "not specified",
       "refreshable tactile display",
-      "vibration",
-      "none"
+      "vibration"
     ],
     "url": "https://doi.org/10.1007/978-3-642-14075-4_13",
     "identifier": "Zeng2010_1",
@@ -6742,8 +6687,7 @@
       "o&m",
       "refreshable tactile display",
       "force feedback device",
-      "audio labels",
-      "none"
+      "audio labels"
     ],
     "url": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.416.2540",
     "identifier": "Zeng2012_2",
